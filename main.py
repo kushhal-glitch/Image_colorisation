@@ -6,6 +6,14 @@ import torch
 from io import BytesIO
 import matplotlib.pyplot as plt
 
+hide_st_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            header {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_st_style, unsafe_allow_html=True)
 st.markdown("<h1 style='text-align: center;'>Image Colorizer</h1>",
             unsafe_allow_html=True)
 
